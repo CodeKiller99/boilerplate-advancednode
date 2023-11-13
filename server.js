@@ -15,7 +15,7 @@ const io = require('socket.io')(http);
 const passportSocketIo = require('passport.socketio');
 const cookieParser = require('cookie-parser');
 const MongoStore = require('connect-mongo')(session);
-const URI = "mongodb+srv://root:Root1@cluster0.scglpqk.mongodb.net/test?retryWrites=true&w=majority&ssl=true";
+const URI = "mongodb+srv://root:Root1@cluster0.scglpqk.mongodb.net/?retryWrites=true&w=majority&ssl=true";
 const store = new MongoStore({ url: URI });
 
 
