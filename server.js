@@ -18,6 +18,7 @@ const MongoStore = require('connect-mongo')(session);
 const URI = "mongodb+srv://root:Root1@cluster0.scglpqk.mongodb.net/?retryWrites=true&w=majority";
 const store = new MongoStore({ url: URI });
 
+
 app.set('view engine', 'pug');
 app.set('views', './views/pug');
 
